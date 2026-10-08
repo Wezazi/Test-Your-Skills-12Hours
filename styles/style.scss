@@ -80,7 +80,7 @@ body{
 
     }
 
-    &__p{
+    &__a{
         color:white;
         @include fonts.josefin-normal;
         text-align:center;
@@ -95,6 +95,7 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
+    
 
     &__content{
         display:flex;
@@ -102,6 +103,9 @@ body{
         max-width:1113px;
         width:100%;
         justify-content:space-between;
+        flex-wrap:wrap;
+        padding-left:20px;
+        padding-right:20px;
     }
    
 }
@@ -113,5 +117,71 @@ ul{
     color:white;
     line-height:26px;
     @include fonts.aleo-normal;
+
+    /*To make logo and list align when wrapping during shrinking viewport */
+    position:relative;
+    right:23px;
+}
+
+
+.why{
+    height:685px;
+    display:flex;
+    justify-content: center;
+    color:white;
+    background-image: url("../images/castle.png");
+    background-size:cover;
+    background-position: center;
+
+    &__content{
+        max-width:1113px;
+        width:100%;
+        display:grid;
+        grid-template-columns: 560px 1fr;
+    }
+
+    &__h2{
+        @include fonts.aleo-normal;
+        font-size:36px;
+        line-height:26px;
+    }
+
+    &__p{
+        @include fonts.josefin-normal;
+        font-size:16px;
+        line-height:26px;
+        letter-spacing:1.6px;
+        
+    }
+
+    &__button{
+        background-color: #5474FD;
+        width:228px;
+        height:63px;
+        color:white;
+        border:none;
+    }
+
+}
+
+
+.how{
+    height:340px;
+    background-color:#333333;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-image: url("../images/connect.png");
+    background-repeat: no-repeat;
+    background-position-x: left 640px;
+    
+
+    &__images{
+        display:flex;
+        justify-content: space-between;
+        max-width:1113px;
+        width:100%;
+    }
+
 }
 

@@ -4,7 +4,7 @@ button:hover{
 
 }
 
-button{
+button, a{
     cursor:pointer;
 }
 
@@ -19,4 +19,33 @@ input::placeholder{
 .logo{
     width:186px;
     height:20px;
+}
+
+
+.green{
+    display:flex;
+    justify-content:flex-start;
+}
+
+.bean{
+    display:flex;
+    justify-content:flex-end;
+}
+
+
+.howSize1{
+    width:353px;
+    height:163px;
+    
+}
+
+.howSize2{
+    width:200px;
+    height:161px;
+}
+
+.howM{
+    width:777px;
+    height:99px;
+    
 }
