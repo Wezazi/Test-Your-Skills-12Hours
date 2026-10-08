@@ -263,6 +263,16 @@ ul{
     color:white;
     flex-direction: column;
 
+    &__card{
+        /*THe three first properties FIXED THE PROBLEM, and allowed me to keep h2 at the top while keeping the card in the middle */
+        display:flex;
+        height:100%;
+        align-items: center; 
+
+        gap:20px;
+    }
+
+
     &__h2{
         line-height: 26px;
         font-size: 36px;
@@ -283,15 +293,19 @@ ul{
     
 }
 
-.banan{
-    /*THe three first properties FIXED THE PROBLEM, and allowed me to keep h2 at the top while keeping the card in the middle */
-    display:flex;
-    height:100%;
-    align-items: center; 
+.footer{
+    background-color: #232323;
+    height: 271px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color:white;
 
-    gap:20px;
+    &__img{
+        position: relative; 
+        right: 15px;
+    }
 }
-
 
 
 
