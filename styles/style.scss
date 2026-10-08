@@ -11,11 +11,22 @@ body{
     width:100vw;
     height:100vh;
     display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    
+    
     background-image: url("../images/bluemnt.png");
     background-size:cover;
     background-position: center;
-    justify-content:center;
-    align-items:center;
+
+
+    /*
+    When using display:grid on the header, i wasn't able to change the width of nav to 100vw without header__content also changing to 100vw. I found a solution: I replaced justify-content: center; with justify-items: center;
+    I changed back to display:flex + flex-direction:column because it's response when shrinking the viewport, unlike grid but no i can't move the nav to the bottom of the viewport and putting it inside header__content to use space between won't work either because the rest of the elements will gain 100vw width
+     
+    */
+    
 
     &__content{
         display:flex;
@@ -103,5 +114,6 @@ nav{
     
     min-height:83px;
     background-color:blue;
-    justify-self:flex-end;
+    width:100vw;
+    
 }
