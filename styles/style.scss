@@ -133,12 +133,22 @@ ul{
     background-image: url("../images/castle.png");
     background-size:cover;
     background-position: center;
+    flex-wrap:wrap;
 
     &__content{
         max-width:1113px;
         width:100%;
-        display:grid;
-        grid-template-columns: 560px 1fr;
+        display:flex;
+        flex-wrap:flex;
+        justify-content: space-between;
+    }
+
+    &__text{
+        width: 560px;
+    }
+
+    &__images{
+        width: 440px;
     }
 
     &__h2{
@@ -162,6 +172,8 @@ ul{
         color:white;
         border:none;
     }
+
+    /*I changed from grid to flex to make the elements more responsive but i wasn't able to make the images wrap under the button on the left text section when shrinking*/
 
 }
 
@@ -258,7 +270,6 @@ ul{
     background-size:cover;
     background-position: center;
     display:flex;
-    
     align-items: center;
     color:white;
     flex-direction: column;
@@ -268,9 +279,12 @@ ul{
         display:flex;
         height:100%;
         align-items: center; 
+        
 
         gap:20px;
     }
+
+
 
 
     &__h2{
@@ -278,15 +292,17 @@ ul{
         font-size: 36px;
         @include fonts.aleo-normal;
         margin-top: 50px;
+        margin:0;
     }
     &__h4{
         line-height: 26px;
         font-size: 20px;
         @include fonts.josefin-normal;
+        margin:0;
     }
     &__p{
-        @include fonts.josefin-normal;
         line-height: 26px;
+        width:581px;
     }
 
 
@@ -305,7 +321,8 @@ ul{
         position: relative; 
         right: 15px;
     }
+
+    &__icon{
+        cursor:pointer;
+    }
 }
-
-
-

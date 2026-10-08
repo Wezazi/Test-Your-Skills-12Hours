@@ -65,3 +65,10 @@ input::placeholder{
     justify-content: flex-end;
 }
 
+.max--wrap{
+    max-width:1113px;
+    width:100%;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}

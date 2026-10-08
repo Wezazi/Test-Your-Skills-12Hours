@@ -68,7 +68,7 @@
                 <button class="why__button">EXPLORE PLACES</button>
             </div>
 
-            <div class="why_images">
+            <div class="why__images">
 
                 <div class="green">
                     <img src="images/greenwater.png">
@@ -84,6 +84,7 @@
     </section>
 
 
+    <!--This section is an absolute disaster-->
     <section class="how">
         <div class="how__images">
             <img class="howSize1" src="images/Search.png" alt="image of a magnifying glass">
@@ -128,23 +129,25 @@
         <h2 class="testimonial__h2">What Our Tourist Say</h2>
         
         <div class="testimonial__card">
-            <div class="max">
-                <div class="left"><img src="images/guyV2.png" alt="image of Sam Sumon"></div>
-                <div class="right">
+            <div class="max--wrap">
+                <img src="images/guyV2.png" alt="image of Sam Sumon">
+                
+                <!--It's a bit more responsive, it wraps when i shrink now but i don't know why the text in the testimonial__p don't adjust after wrapping like the p elements in card__p does-->
+                <div>
                     <h4 class="testimonial__h4">Sam Sumon</h4>
                     <p class="testimonial__p">But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
-
-                </div>
+                </div> 
+                
             </div>
         </div>
 
     </section>
 
     <footer class="footer">
-        <div class="stuff">
+        <div>
             <img class="footer__img" src="images/logo.png">
             <p>Safe Travel Anywhere</p>
-            <img src="images/notanimage.png">
+            <img class="footer__icon" src="images/notanimage.png">
         </div>
         
     </footer>
