@@ -185,3 +185,68 @@ ul{
 
 }
 
+.section{
+    height:1400px;
+    background-color: aqua;
+    &__group1{
+        height:700px;
+        background-color: yellow;
+        background-image: url("../images/house.png");
+        background-size:cover;
+        background-position: center;
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__group2{
+        height:700px;
+        background-color:  purple;
+        background-image: url("../images/water.png");
+        background-size:cover;
+        background-position: center;
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+}
+
+.card{
+    height:374px;
+    background-color: #5474FD;
+    max-width:543px;
+    width:100%;
+    padding-left:32px;
+
+    &__h4{
+        color:white;
+        @include fonts.josefin-normal;
+        line-height: 26px;
+        letter-spacing: 1.5px;
+    }
+    &__h3{
+        color:white;
+        @include fonts.josefin-normal;
+        line-height: 26px;
+    }
+    &__p{
+        color:white;
+        @include fonts.josefin-normal;
+        line-height: 26px;
+    }
+    &__button{
+        background-color: #496BFE;
+        color:white;
+        width:228px;
+        height: 63px;
+        border:none;
+    }
+}
+
+
+

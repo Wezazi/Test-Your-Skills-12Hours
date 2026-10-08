@@ -49,3 +49,17 @@ input::placeholder{
     height:99px;
     
 }
+
+
+.max{
+    max-width:1113px;
+    width:100%;
+    display:flex;
+}
+
+.max--rev{
+    max-width:1113px;
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+}
