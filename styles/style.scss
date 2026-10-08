@@ -1,5 +1,7 @@
 
 @use 'fonts';
+@use 'details';
+
 
 body{
     width:100vw;
@@ -13,37 +15,30 @@ body{
     display:flex;
     flex-direction: column;
     align-items:center;
-    justify-content: center;
-    
-    
+    justify-content:center;
     background-image: url("../images/bluemnt.png");
     background-size:cover;
     background-position: center;
 
 
-    /*
-    When using display:grid on the header, i wasn't able to change the width of nav to 100vw without header__content also changing to 100vw. I found a solution: I replaced justify-content: center; with justify-items: center;
-    I changed back to display:flex + flex-direction:column because it's response when shrinking the viewport, unlike grid but no i can't move the nav to the bottom of the viewport and putting it inside header__content to use space between won't work either because the rest of the elements will gain 100vw width
-     
-    */
-    
 
     &__content{
         display:flex;
         flex-direction:column;
         justify-content:center;
         align-items:center;
-        
+        width:100vw;
+        height:100vh;
     }
 
 
     &__text{
-        min-width:372px;
+        max-width:372px;
         width:100%;
-        min-height:76px; /*makes massive difference, if you comment it out, you will notice that it overlaps with the input element */
+        min-height:76px;
         color:white;
         text-align:center;
-
+        
         &__h1{
             font-size:48px;
             @include fonts.josefin-bold;
@@ -60,24 +55,22 @@ body{
     }
 
     &__form{
-        min-width:653px;
+        max-width:653px;
         width:100%;
         min-height:63px;
         display:flex;
+        margin-bottom:50px;
     }
 
     &__input{
-        min-width:503px;
+        max-width:503px;
         width:100%;
         min-height:63px;
         border:none;
         outline:none;
     }
-
-
-
     &__button{
-        min-width:153px;
+        max-width:153px;
         width:100%;
         min-height:63px;
         color:white;
@@ -87,33 +80,38 @@ body{
 
     }
 
-
-
-
+    &__p{
+        color:white;
+        @include fonts.josefin-normal;
+        text-align:center;
+        margin-top:50px;
+    }
 }
 
-button:hover{
-    background-color: #4CAF50;
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
-
-}
-
-button{
-    cursor:pointer;
-}
-
-input:focus::placeholder{
-    color:transparent;
-}
-
-input::placeholder{
-    text-align:center;
-}
-
-nav{
-    
+.nav{
     min-height:83px;
     background-color:blue;
     width:100vw;
-    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    &__content{
+        display:flex;
+        align-items:center;
+        max-width:1113px;
+        width:100%;
+        justify-content:space-between;
+    }
+   
 }
+
+ul{
+    list-style-type: none;
+    display:flex;
+    gap:21px;
+    color:white;
+    line-height:26px;
+    @include fonts.aleo-normal;
+}
+

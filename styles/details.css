@@ -1,0 +1,1 @@
+button:hover{background-color:#4CAF50;box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)}button{cursor:pointer}input:focus::-moz-placeholder{color:transparent}input:focus::placeholder{color:transparent}input::-moz-placeholder{text-align:center}input::placeholder{text-align:center}

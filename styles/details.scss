@@ -1,0 +1,22 @@
+button:hover{
+    background-color: #4CAF50;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
+
+}
+
+button{
+    cursor:pointer;
+}
+
+input:focus::placeholder{
+    color:transparent;
+}
+
+input::placeholder{
+    text-align:center;
+}
+
+.logo{
+    width:186px;
+    height:20px;
+}
