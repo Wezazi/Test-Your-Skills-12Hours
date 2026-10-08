@@ -17,10 +17,19 @@ body{
     justify-content:center;
     align-items:center;
 
+    &__content{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        
+    }
+
 
     &__text{
-        width:372px;
-        height:76px;
+        min-width:372px;
+        width:100%;
+        min-height:76px; /*makes massive difference, if you comment it out, you will notice that it overlaps with the input element */
         color:white;
         text-align:center;
 
@@ -39,6 +48,60 @@ body{
         }
     }
 
+    &__form{
+        min-width:653px;
+        width:100%;
+        min-height:63px;
+        display:flex;
+    }
+
+    &__input{
+        min-width:503px;
+        width:100%;
+        min-height:63px;
+        border:none;
+        outline:none;
+    }
+
+
+
+    &__button{
+        min-width:153px;
+        width:100%;
+        min-height:63px;
+        color:white;
+        background-color:#5474FD;
+        border:none;
+        transition-duration: 0.5s; /*hover effects transition duration*/
+
+    }
+
+
+
 
 }
 
+button:hover{
+    background-color: #4CAF50;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
+
+}
+
+button{
+    cursor:pointer;
+}
+
+input:focus::placeholder{
+    color:transparent;
+}
+
+input::placeholder{
+    text-align:center;
+}
+
+nav{
+    
+    min-height:83px;
+    background-color:blue;
+    justify-self:flex-end;
+}
