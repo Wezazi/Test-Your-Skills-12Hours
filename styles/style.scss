@@ -16,6 +16,7 @@ body{
     flex-direction: column;
     align-items:center;
     justify-content:center;
+
     background-image: url("../images/bluemnt.png");
     background-size:cover;
     background-position: center;
@@ -247,6 +248,50 @@ ul{
         border:none;
     }
 }
+
+
+.testimonial{
+    padding-top:50px;
+    background-color: #496BFE;
+    height:731px;
+    background-image: url("../images/guy.png");
+    background-size:cover;
+    background-position: center;
+    display:flex;
+    
+    align-items: center;
+    color:white;
+    flex-direction: column;
+
+    &__h2{
+        line-height: 26px;
+        font-size: 36px;
+        @include fonts.aleo-normal;
+        margin-top: 50px;
+    }
+    &__h4{
+        line-height: 26px;
+        font-size: 20px;
+        @include fonts.josefin-normal;
+    }
+    &__p{
+        @include fonts.josefin-normal;
+        line-height: 26px;
+    }
+
+
+    
+}
+
+.banan{
+    /*THe three first properties FIXED THE PROBLEM, and allowed me to keep h2 at the top while keeping the card in the middle */
+    display:flex;
+    height:100%;
+    align-items: center; 
+
+    gap:20px;
+}
+
 
 
 
